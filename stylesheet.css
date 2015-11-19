@@ -1,0 +1,84 @@
+#container{
+    width:100vw;
+    height: 100vh;
+
+}
+#about{
+	background-color:#ffffff;
+    width:100vw;
+    height: 100vh;
+
+}
+.paragraph{
+	font-family: 'Merriweather';
+	font-weight: 20;
+	font-size: 1em;
+	position: relative;
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 40px;
+	padding-right: 50px;
+
+}
+#centered{
+	font-family: 'Merriweather', Times, serif;
+	font-weight: 700;
+	font-size: 5em;
+	text-align: center;
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-left:70px;
+	width:900px;
+	height:30px;
+	margin:auto;
+	position:relative;
+	top:150px;
+	bottom:0;
+	right:0;
+	left:0;       
+}
+#desc{
+	font-family: 'Merriweather', Times, serif;
+	font-weight: 50;
+	font-size: 1em;
+	text-align: center;
+	width:900px;
+	height:30px;
+	margin:auto;
+	position:relative;
+	top:220px;
+	bottom:0;
+	right:0;
+	left:0;      
+}
+.postHeader{
+	font-size: 3em;
+	font-family:'Merriweather', Times, serif;
+	font-weight: 700;
+	text-align: center;
+}
+#nav{
+	font-family: 'Merriweather', Times, serif;
+	font-weight: 50;
+	font-size: 1em;
+	text-align: center;
+	width:900px;
+	height:30px;
+	margin:auto;
+	position:relative;
+	top:215px;
+	bottom:0;
+	right:0;
+	left:0;      
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+    top: 300px;
+    bottom: 24px;
+    right: 0;
+    left: 0;
+}
