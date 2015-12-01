@@ -9,15 +9,19 @@
     height: 100vh;
 
 }
-.paragraph{
+.text{
+	float: center;
 	font-family: 'Merriweather';
 	font-weight: 20;
 	font-size: 1em;
-	position: relative;
-	text-align: center;
-	padding-top: 10px;
-	padding-left: 40px;
-	padding-right: 50px;
+	margin-left: 450px;
+	padding-top: 120px;
+	padding-right: 200px;
+
+}
+.me-image{
+	float: left;
+	padding-left: 100px;
 
 }
 #centered{
