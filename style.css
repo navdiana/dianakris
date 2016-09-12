@@ -1,0 +1,18 @@
+h1{
+	font-family: 'Lora', cursive;
+	color:#878889;
+	font-size: 40px;
+}
+body{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color:#878889;
+	font-size: 20px;
+	padding-left: 50px;
+}
+.all{
+	margin-top: 70px;
+	margin-left: 10%;
+}
+a{
+	color:#878889;
+}
