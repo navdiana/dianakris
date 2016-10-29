@@ -7,13 +7,13 @@ function scroll(position){
 		curr += msg.charAt(i);
 	}
 	sc.innerHTML = curr;
-	positionr++;
+	position++;
 
 	if (position != msg.length) {
 		window.setTimeout(function() { scroll(position); }, 50);
 	}
 	else {
-		window.setTimeout(function() { scroll(0); }, 2000);
+		window.setTimeout(function() { scroll(0); }, 300);
 	}
 }
 scroll(0);
