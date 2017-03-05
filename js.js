@@ -1,5 +1,5 @@
 function scroll(position){
-	var msg = "I'm Diana Kris Navarro.";
+	var msg = "Diana Kris Navarro";
 	var curr= "";
 	var sc = document.getElementById("myName");
 
@@ -10,7 +10,7 @@ function scroll(position){
 	position++;
 
 	if (position != msg.length) {
-		window.setTimeout(function() { scroll(position); }, 70);
+		window.setTimeout(function() { scroll(position); }, 50);
 	}
 	else {
 		window.setTimeout(function() { scroll(0); }, 300);
