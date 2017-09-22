@@ -10,12 +10,13 @@
 	font-size: 15px;
 	width: 50%;
 	margin-left: 24%;
+	margin-bottom: 10%;
 }
 .all{
 	padding-top: 9%;
 	width: 100%;
   margin: 0 auto;
-  padding-bottom: 9%;
+  margin-bottom: 10%;
 }
 a{
 	color:#878889;
