@@ -20,11 +20,12 @@ img.rounded-corners {
 body, html {
     margin: 0;
     padding: 0;
+    padding-right: 200px;
     background-color: #f6e8ec;
     color: #444452;
     font-family: "Source Sans Pro",Roboto,Helvetica,Arial,sans-serif;
     line-height: 1.5;
-    width: 100%;
+    width: 95%;
 }
 .intro {
     padding: 110px 100px;
@@ -36,8 +37,9 @@ body, html {
 .intro__contact {
 	font-size: 22px;
     font-weight: 300;
-    max-width: 800px;
+    max-width: 750px;
     padding-top: 20px;
+    padding-right: 50px;
 }
 .intro__tagline {
 	font-size: 30px;
