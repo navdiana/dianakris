@@ -20,7 +20,6 @@ img.rounded-corners {
 body, html {
     margin: 0;
     padding: 0;
-    padding-right: 200px;
     background-color: #f6e8ec;
     color: #444452;
     font-family: "Source Sans Pro",Roboto,Helvetica,Arial,sans-serif;
@@ -28,10 +27,10 @@ body, html {
     width: 95%;
 }
 .intro {
-    padding: 110px 100px;
+    padding: 110px 10px;
     padding-bottom: 300px;
     height: 100vh;
-    max-width: 1440px;
+    max-width: 900px;
     margin: 0 auto;
 }
 .intro__contact {
@@ -39,7 +38,7 @@ body, html {
     font-weight: 300;
     max-width: 750px;
     padding-top: 20px;
-    padding-right: 50px;
+    padding-right: -10px;
 }
 .intro__tagline {
 	font-size: 30px;
@@ -56,14 +55,18 @@ body, html {
  .intro {
    font-size: 15px; 
    padding: 5px;
+   padding-left: 10px;
   }
   .intro__contact {
    font-size: 15px;
    padding: 5px;
+   padding-left: 10px;
   }
   .intro__tagline {
    font-size: 15px;
    padding: 5px;
+   padding-left: 5px;
+   padding-left: 10px;
 }
 }
 
@@ -77,17 +80,21 @@ body, html {
   .intro {
    font-size: 15px;
    padding: 5px;
+   padding-top: 20px;
    padding-bottom: 160px;
    margin: 0 auto;
+   padding-left: 10px;
   }
   .intro__contact {
    font-size: 15px;
    padding: 5px;
+   padding-left: 10px;
   }
   .intro__tagline {
    font-size: 15px;
-   padding: 5px;
+   padding: 10px;
    padding-bottom: 20px;
+   padding-left: 10px;
 	}
 }
 
