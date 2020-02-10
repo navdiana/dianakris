@@ -20,7 +20,7 @@ a{
 }
 
 a:hover {
-  color: #EF5365;
+  color: white;
 }
 
 img.rounded-corners {
@@ -30,7 +30,7 @@ img.rounded-corners {
 body, html {
     margin: 0;
     padding: 0;
-    background-color: #f6e8ec;
+    background-color: #FFC9CB;
     color: #444452;
     font-family: "Source Sans Pro",Roboto,Helvetica,Arial,sans-serif;
     line-height: 1.5;
