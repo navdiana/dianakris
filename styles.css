@@ -47,27 +47,7 @@ body {
   text-align: center;
 }
 
-.hi-there-row {
-  position: relative;
-}
-
-.hi {
-  flex: 1 1 auto;
-  text-align: center;
-  z-index: 1;
-  margin-left: -10px;
-}
-
-.divider {
-  flex: 1;
-  height: 2px;
-  background: #222;
-  margin: 0 24px;
-  min-width: 40px;
-  max-width: 120px;
-}
-
-.hi, .there, .diana {
+.diana {
   font-size: 4vw;
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -80,7 +60,7 @@ body {
   align-items: center;
   flex: 1;
   min-height: 350px;
-  margin: 0 0 0 0;
+  margin: 0;
 }
 
 .portrait {
@@ -126,42 +106,6 @@ body {
   margin-bottom: 0;
 }
 
-.illustration-cta-row {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin-top: 32px;
-  gap: 16px;
-}
-
-.illustration {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: flex-end;
-  height: 90px;
-}
-
-.cta-button {
-  background: #181818;
-  color: #fff;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1rem;
-  padding: 16px 32px;
-  border: none;
-  border-radius: 2px;
-  text-decoration: none;
-  letter-spacing: 0.04em;
-  font-weight: 700;
-  transition: background 0.2s;
-  margin-left: auto;
-  margin-bottom: 8px;
-  display: block;
-}
-
-.cta-button:hover {
-  background: #444;
-}
-
 .footer-row {
   display: flex;
   justify-content: space-between;
@@ -178,15 +122,26 @@ body {
   letter-spacing: 0.03em;
 }
 
-.footer-status {
-  letter-spacing: 0.08em;
+/* List styles */
+ul, ol, li {
+  font-family: 'ITC Garamond Condensed', 'Cormorant Garamond', serif;
 }
 
+ul {
+  padding-inline-start: 1em;
+}
+
+ul li, ol li {
+  padding-bottom: 0.5em;
+  letter-spacing: 0.02em;
+}
+
+/* Media Queries */
 @media (max-width: 1000px) {
   .main-grid {
     grid-template-columns: 1.2fr 1.5fr;
   }
-  .hi, .there, .diana {
+  .diana {
     font-size: 2.5rem;
   }
 }
@@ -208,7 +163,7 @@ body {
   .portrait {
     width: 90%;
   }
-  .hi-there-row, .diana-row {
+  .diana-row {
     margin-bottom: 16px;
     margin-top: 16px;
   }
@@ -221,15 +176,11 @@ body {
   body {
     font-size: 1.15rem;
   }
-  .hi, .there, .diana {
+  .diana {
     font-size: 1.6rem;
   }
   .block-text {
     font-size: 1.18rem;
-  }
-  .cta-button {
-    padding: 12px 8px;
-    font-size: 1.05rem;
   }
   .footer-row {
     font-size: 1rem;
@@ -259,83 +210,4 @@ body {
   ul {
     padding-inline-start: 1.2em;
   }
-}
-
-ul, ol, li {
-  font-family: 'ITC Garamond Condensed', 'Cormorant Garamond', serif;
-}
-
-ul {
-  padding-inline-start: 1em;
-}
-
-ul li, ol li {
-  padding-bottom: 0.5em;
-  letter-spacing: 0.02em;
-}
-
-/* Hover tooltip styles */
-.tooltip {
-  position: relative;
-  cursor: pointer;
-}
-
-.tooltip::after {
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: 120px;
-  background-image: var(--tooltip-image);
-  background-size: cover;
-  background-position: center;
-  border: 2px solid #222;
-  border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
-  z-index: 1000;
-}
-
-.tooltip:hover::after {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Alternative: Tooltip with custom content */
-.tooltip-custom {
-  position: relative;
-  cursor: pointer;
-}
-
-.tooltip-custom .tooltip-content {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: white;
-  border: 2px solid #222;
-  border-radius: 4px;
-  padding: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
-  z-index: 1000;
-  width: 150px;
-  text-align: center;
-}
-
-.tooltip-custom .tooltip-content img {
-  width: 100%;
-  height: auto;
-  border-radius: 2px;
-}
-
-.tooltip-custom:hover .tooltip-content {
-  opacity: 1;
-  visibility: visible;
 } 
