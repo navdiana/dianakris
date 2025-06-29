@@ -1,0 +1,264 @@
+@font-face {
+  font-family: 'ITC Garamond Condensed';
+  src: url('itc-garamond-std-book-condensed.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background: #f8f5ea;
+  font-family: 'ITC Garamond Condensed', 'Cormorant Garamond', serif;
+  margin: 0;
+  padding: 0;
+  color: #181818;
+  font-size: 1.15rem;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1.4fr;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px 0 40px 40px;
+  border-right: 3px solid #222;
+  background: #f8f5ea;
+}
+
+.diana-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.diana-row .diana {
+  text-align: center;
+}
+
+.hi-there-row {
+  position: relative;
+}
+
+.hi {
+  flex: 1 1 auto;
+  text-align: center;
+  z-index: 1;
+  margin-left: -10px;
+}
+
+.divider {
+  flex: 1;
+  height: 2px;
+  background: #222;
+  margin: 0 24px;
+  min-width: 40px;
+  max-width: 120px;
+}
+
+.hi, .there, .diana {
+  font-size: 4vw;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-family: 'ITC Garamond Condensed', 'Cormorant Garamond', serif;
+}
+
+.portrait-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-height: 350px;
+  margin: 0 0 0 0;
+}
+
+.portrait {
+  width: 90%;
+  max-width: 520px;
+  height: auto;
+  object-fit: contain;
+  border: 2px solid #222;
+  background: #e0d7c6;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 40px 24px 40px;
+  background: #f8f5ea;
+  min-width: 340px;
+}
+
+.content-block {
+  flex: 1;
+}
+
+.block {
+  margin-bottom: 32px;
+}
+
+.block-title {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 6px;
+  letter-spacing: 0.04em;
+}
+
+.block-text {
+  font-family: 'ITC Garamond Condensed', 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: #222;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.illustration-cta-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 32px;
+  gap: 16px;
+}
+
+.illustration {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-end;
+  height: 90px;
+}
+
+.cta-button {
+  background: #181818;
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 2px;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  transition: background 0.2s;
+  margin-left: auto;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.cta-button:hover {
+  background: #444;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.8rem;
+  color: #222;
+  border-top: 2px solid #222;
+  padding-top: 8px;
+  margin-top: 32px;
+}
+
+.footer-year {
+  letter-spacing: 0.03em;
+}
+
+.footer-status {
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 1000px) {
+  .main-grid {
+    grid-template-columns: 1.2fr 1.5fr;
+  }
+  .hi, .there, .diana {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+  .left-column, .right-column {
+    padding: 20px 12px;
+  }
+  .left-column {
+    border-right: none;
+    border-bottom: 3px solid #222;
+  }
+  .right-column {
+    min-width: unset;
+  }
+  .portrait {
+    width: 90%;
+  }
+  .hi-there-row, .diana-row {
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 1.15rem;
+  }
+  .hi, .there, .diana {
+    font-size: 1.6rem;
+  }
+  .block-text {
+    font-size: 1.18rem;
+  }
+  .cta-button {
+    padding: 12px 8px;
+    font-size: 1.05rem;
+  }
+  .footer-row {
+    font-size: 1rem;
+  }
+  .diana-row .diana {
+    font-size: 10vw;
+    display: block;
+    width: 90vw;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1;
+  }
+  .portrait {
+    width: 90vw;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .block-title {
+    font-size: 0.7rem;
+  }
+}
+
+ul, ol, li {
+  font-family: 'ITC Garamond Condensed', 'Cormorant Garamond', serif;
+}
+
+ul {
+  padding-inline-start: 1vw;
+}
+
+ul li, ol li {
+  padding-bottom: 0.5em;
+  letter-spacing: 0.02em;
+} 
