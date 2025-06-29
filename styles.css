@@ -13,13 +13,14 @@ body {
   padding: 0;
   color: #181818;
   font-size: 1.15rem;
+  overflow-x: hidden;
 }
 
 .main-grid {
   display: grid;
   grid-template-columns: 1.2fr 1.4fr;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .left-column {
@@ -68,7 +69,7 @@ body {
 .hi, .there, .diana {
   font-size: 4vw;
   font-weight: 400;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.01em;
   font-family: 'ITC Garamond Condensed', 'Cormorant Garamond', serif;
 }
 
@@ -194,7 +195,7 @@ body {
     grid-template-columns: 1fr;
   }
   .left-column, .right-column {
-    padding: 20px 12px;
+    padding: 20px 20px 20px 24px;
   }
   .left-column {
     border-right: none;
@@ -232,14 +233,14 @@ body {
   .diana-row .diana {
     font-size: 10vw;
     display: block;
-    width: 90vw;
+    width: 90%;
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
     line-height: 1;
   }
   .portrait {
-    width: 90vw;
+    width: 90%;
     max-width: 100%;
     height: auto;
     display: block;
@@ -248,6 +249,9 @@ body {
   .block-title {
     font-size: 0.7rem;
   }
+  .left-column, .right-column {
+    padding: 20px 16px 20px 28px;
+  }
 }
 
 ul, ol, li {
@@ -255,7 +259,7 @@ ul, ol, li {
 }
 
 ul {
-  padding-inline-start: 1vw;
+  padding-inline-start: 1em;
 }
 
 ul li, ol li {
