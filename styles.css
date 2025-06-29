@@ -211,6 +211,9 @@ body {
     margin-bottom: 16px;
     margin-top: 16px;
   }
+  ul {
+    padding-inline-start: 1.5em;
+  }
 }
 
 @media (max-width: 500px) {
@@ -251,6 +254,9 @@ body {
   }
   .left-column, .right-column {
     padding: 20px 16px 20px 28px;
+  }
+  ul {
+    padding-inline-start: 2em;
   }
 }
 
