@@ -14,6 +14,7 @@ body {
   color: #181818;
   font-size: 1.15rem;
   overflow-x: hidden;
+  letter-spacing: 0;
 }
 
 .main-grid {
@@ -29,7 +30,7 @@ body {
   justify-content: space-between;
   align-items: stretch;
   padding: 40px 0 40px 40px;
-  border-right: 3px solid #222;
+  border-right: 2px solid #222;
   background: #f8f5ea;
 }
 
@@ -114,12 +115,12 @@ body {
   font-size: 1rem;
   color: #222;
   margin-bottom: 6px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
 }
 
 .block-text {
   font-family: 'ITC Garamond Condensed', 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: #222;
   line-height: 1.2;
   margin-bottom: 0;
@@ -212,7 +213,7 @@ body {
     margin-top: 16px;
   }
   ul {
-    padding-inline-start: 1.5em;
+    padding-inline-start: 1.2em;
   }
 }
 
@@ -256,7 +257,7 @@ body {
     padding: 20px 16px 20px 28px;
   }
   ul {
-    padding-inline-start: 2em;
+    padding-inline-start: 1.2em;
   }
 }
 
@@ -271,4 +272,70 @@ ul {
 ul li, ol li {
   padding-bottom: 0.5em;
   letter-spacing: 0.02em;
+}
+
+/* Hover tooltip styles */
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background-image: var(--tooltip-image);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #222;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Alternative: Tooltip with custom content */
+.tooltip-custom {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip-custom .tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 2px solid #222;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+  width: 150px;
+  text-align: center;
+}
+
+.tooltip-custom .tooltip-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.tooltip-custom:hover .tooltip-content {
+  opacity: 1;
+  visibility: visible;
 } 
